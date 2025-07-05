@@ -323,6 +323,8 @@ i[class*="van-type-"] {
 .van-detail img {
     border-radius: 5px;
     margin-block: 47px;
+    justify-self: center;
+    max-width: 750px;
 }
 
 .van-detail h2 {
@@ -818,12 +820,41 @@ img.graph {
         gap: 2rem;
     }
 
+    .van-detail {
+        display: flex;
+        flex-direction: row;
+        color: #161616;
+    }
+
+
+    .van-detail img {
+
+        padding: 1rem;
+        border-radius: 2rem;
+        margin-right: 2rem;
+        max-width: 600px;
+
+    }
+
+    .van-detail-section {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .van-type {
+
+        max-width: fit-content
+    }
+
     .van-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
         align-items: center;
     }
+
     .van-tile img {
         margin-block: 0;
         width: 100%;
