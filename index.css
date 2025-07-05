@@ -778,3 +778,52 @@ img.graph {
         box-sizing: border-box;
     }
 }
+
+@media (min-width: 1024px) {
+    .van-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+    .van-tile img {
+        margin-block: 0;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1920px) {
+    .van-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 48px;
+    }
+    .van-detail {
+        grid-template-columns: 1fr 2fr;
+        gap: 60px;
+    }
+    .van-tile img,
+    .van-detail img {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .van-list {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 64px;
+    }
+    .van-detail {
+        grid-template-columns: 1fr 2fr;
+        gap: 80px;
+    }
+    .van-tile img,
+    .van-detail img {
+        max-width: 600px;
+    }
+}
+
+
+
+
