@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s04sl5c",
-  "description": "https://scrimba.com/frontend-path-c0j/~0124/s0at518pip/head",
+  "name": "Scrim-s04sk6m",
+  "description": "https://scrimba.com/frontend-path-c0j/~014e/s0g0432fkb/head",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -8,10 +8,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "firebase": "^11.10.0",
+    "miragejs": "^0.1.48",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "4.7.1",
     "react-router-dom": "6.4.3",
-    "miragejs": "0.1.46",
     "vite": "latest"
   },
   "devDependencies": {
