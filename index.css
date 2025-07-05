@@ -780,6 +780,14 @@ img.graph {
 }
 
 @media (min-width: 1024px) {
+
+    .home-container {
+
+        margin: 4rem;
+        padding: 8rem 2rem;
+        border-radius: 1rem;
+    }
+
     .van-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
