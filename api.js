@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, doc } from "firebase/firestore/lite"
+import { getFirestore, collection, getDocs, doc, getDoc } from "firebase/firestore/lite"
 
 /*
 // by adding lite at the end, we are calling a lite version of this firestore, because firestore includes real-time database features also which we don't require right now
@@ -40,7 +40,10 @@ export async function getVans() {
 
 export async function getVan(id) {
     const docRef = doc(db, "vans", id)
-    const snapshot = getDocs(docRef)
+    const snapshot = await getDoc(docRef) // <-- use getDoc here
+    if (!snapshot.exists()) {
+        throw new Error("Van not found")
+    }
     return {
         ...snapshot.data(),
         id: snapshot.id
